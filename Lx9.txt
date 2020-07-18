@@ -1,0 +1,46 @@
+C#企业级开发技术练习9答题卡
+
+班级：     信管1班
+姓名：     李祖森
+学号：     20190307125
+
+注：请将答案放置在序号下方。*/
+
+（一）
+using System;
+using System.Collections.Generic;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Dictionary<int, string> courses = new Dictionary<int, string>()
+            {
+                [5331034] = "javascript",
+                [5331095] = "linux",
+                [5331019] = "PHP"
+            };
+            int id = 5331034; string s = $"键{id}";
+            if (!courses.ContainsKey(id))
+                Console.WriteLine($"{s}不存在,下面添加");
+            else
+            {
+                Console.WriteLine($"{s}对应的值为{id},下面修改");
+            }
+            courses.Add(id, "html5");
+            Console.WriteLine("结果如下:");
+            foreach(var c in courses)
+            {
+                Console.WriteLine($"键：{id},值：{id}");
+            }
+        }
+    }
+}
+
+（二）
+
+
+
+
